@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+
+  get 'posts/edit'
+
+  get 'posts/new'
+
   devise_for :users
   get 'users/index'
   root 'users#index'

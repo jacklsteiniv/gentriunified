@@ -16,6 +16,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$content-width: 1400px;
+
+* {
+  color: #57B7DF;
+}
+
+head, body  {
+  color: #57B7DF;
+}
+
 ul {
    list-style-type: none;
    margin: 0;
@@ -38,19 +48,49 @@ li a {
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
+   background-color: #F16733
 }
 
 li a:hover:not(.active) {
-   background-color: #ddd;
+   background-color: #F16733;
+   color: black;
 }
 
 li a.active {
    color: white;
-   background-color: #4CAF50 ;
-   background-color: #111;
+   background-color: #F16733;
 }
 
 
 .active {
    background-color: #4CAF50 ;
+}
+
+.jumbotron {
+  background-repeat: none;
+  height: 500px;
+  /*background-image: ; */
+}
+
+#sign-up, #sign-in {
+  float: right;
+  margin: 10px;
+}
+
+a, #orange {
+  background-color: #F16733;
+}
+
+#connect {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.container {
+  height: 800px;
+}
+
+btn btn-default {
+  background-color: #F16733 important;
+  text-color: white;
 }

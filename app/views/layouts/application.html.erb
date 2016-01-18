@@ -5,22 +5,42 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <ul>
+ <div id = "orange"><li id "who"><a class="active" href="#about">How it Works</a></div></li>
+ <li id = "sign-up"><%=link_to "Create Account", new_user_registration_path %></li>
+
+ <li id = "sign-in"><%=link_to "Sign In", new_user_session_path %></li>
+</ul>
 </head>
 <body>
 
+<div class="jumbotron text-center">
+<h1>RE-Source</h1>
+<h3>Give back.</h3>
+  <div id = "connect">
+    <h3>Businesses or individuals can...</h3>
+    <input class="btn btn-default" type="button" value="Make a Connection">
+  </div>
+</div>
+
+
+<div class="container">
+<!-- The 'How it works' partial can go here. -->
+<h3>How it works.</h3>
+
+</div>
+
 <%= yield %>
 
-<ul>
- <li><a class="active" href="#about">Who We Are</a></li>
- <li><a href="Sign Up">Sign Up</a></li>
-</ul>
+<footer class="footer">
+  <ul class = "nav navbar-nav navbar-fixed-bottom">
+    <li id "about"><%= link_to "About",  '#' %></li>
+    <li id = "contact"><%= link_to "Contact", '#' %></li>
+  </ul>
+</footer>
 
-<a href="#" class="button">Link Button</a>
-
-<h2> How It Works: </h2>>
 
 </body>
 </html>
-</style>
-</head>
+
 

@@ -1,1 +1,3 @@
-# New App\n\nThis is a new app.
+# Gentriunified
+
+Map neighborhoods, help the homeless - Hackathon project in the works
